@@ -66,7 +66,7 @@ public class Game_001 extends Activity {
             //Toast.makeText(getApplicationContext(), "Bravo!", Toast.LENGTH_SHORT).show();
 
             //temp code START
-            //TODO fix: this shit below works in emulator but not on device :(
+            //TODO fix: this shit below works in emulator but on device NOT the first time you try :(
             Intent myIntent2 = new Intent(this, Bravo1.class);
             startActivity(myIntent2);
             //temp code END
