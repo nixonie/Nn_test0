@@ -22,8 +22,10 @@ public class MainActivity extends Activity {
 
         });
     }
-//TODO: app is slow on device | do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.) |
-    // TODO: make other game templates samples
-    // TODO: make backgrounds repeatable image
-    // TODO: make different version of images for different densities
+
+    //TODO: WTF is that title bar doing on top of all screens? Kill it with fire...
+    //TODO: app is kinda slow on actual device - do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.)
+    //TODO: make other game templates samples
+    //TODO: make backgrounds repeatable image
+    //TODO: make different version of images for different densities
 }
