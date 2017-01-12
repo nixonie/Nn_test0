@@ -32,7 +32,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            //TODO fix: this sucks, sets height and width but this does not work on all screen sizes, 385 is good for big, 200 or something for small :(
+            //TODO fix: this sucks :), sets height and width but this does not work on all screen sizes, 385 is good for big, 200 or something for small :(
             //maybe different images for different densities will do but i doubt it....
             imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
