@@ -10,6 +10,7 @@
     android:background="@drawable/back_02">
 
 <!-- TODO add top bar with home button, next game button and current results -->
+    <!-- redo layout Relative > Linear? -->
 
     <ImageView
             android:layout_width="match_parent"
