@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
     }
 
     //TODO: app is kinda slow on actual device - do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.)
+    //TODO: repeating stuff through classes - can be optimized/inherited?: soundpool, Immersive mode...
     //TODO: make other game templates samples
     //TODO: make backgrounds repeatable image
     //TODO: make different version of images for different densities
