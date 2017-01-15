@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Game_001 extends Activity {
+public class Game_002 extends Activity {
     private SoundPool soundPool;
     private AudioManager audioManager;
     // Maximum sound stream.
@@ -37,48 +37,34 @@ public class Game_001 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_001);
+        setContentView(R.layout.activity_game_002);
 
         //todo add Audio to read question
         //todo replay the Audio on click of the question
+        final ImageView image21 = (ImageView) this.findViewById(R.id.imageView21);
+        final ImageView image22 = (ImageView) this.findViewById(R.id.imageView22);
+        final ImageView image23 = (ImageView) this.findViewById(R.id.imageView23);
+        final ImageView image24 = (ImageView) this.findViewById(R.id.imageView24);
 
-        //used to be a home button
-//        Button home = (Button) findViewById(R.id.button_home);
-//        home.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View view) {
-//                Intent myIntent = new Intent(view.getContext(), Main2Activity.class);
-//                startActivityForResult(myIntent, 0);
-//            }
-//        });
-
-        final ImageView image1 = (ImageView) this.findViewById(R.id.imageView6);
-        final ImageView image2 = (ImageView) this.findViewById(R.id.imageView5_1);
-        final ImageView image3 = (ImageView) this.findViewById(R.id.imageView4_2);
-        final ImageView imageF1 = (ImageView) this.findViewById(R.id.imageView001_1);
-        final ImageView imageF2 = (ImageView) this.findViewById(R.id.imageView001_2);
-        final ImageView imageF3 = (ImageView) this.findViewById(R.id.imageView001_3);
-
-        image1.setOnClickListener(new View.OnClickListener() {
+        image21.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                image1.setVisibility(View.INVISIBLE);
-                imageF1.setVisibility(View.VISIBLE);
-                checkAll(imageF1, imageF2, imageF3);
+                image21.setVisibility(View.INVISIBLE);
+                image24.setVisibility(View.VISIBLE);
+                //goto bravo play shit etc.
+                gotoBravo();
             }
         });
-        image2.setOnClickListener(new View.OnClickListener() {
+        image22.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                image2.setVisibility(View.INVISIBLE);
-                imageF2.setVisibility(View.VISIBLE);
-                checkAll(imageF1, imageF2, imageF3);
+                //TODO: bad choice actions
             }
         });
-        image3.setOnClickListener(new View.OnClickListener() {
+        image23.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                image3.setVisibility(View.INVISIBLE);
-                imageF3.setVisibility(View.VISIBLE);
-                checkAll(imageF1, imageF2, imageF3);
+                //TODO: bad choice actions
             }
         });
+
 
         //prepare to play audio two_barks from raw
         // AudioManager audio settings for adjusting the volume
@@ -118,28 +104,22 @@ public class Game_001 extends Activity {
 
         // Load sound file (two_barks.mp3) into SoundPool.
         this.soundIdBarks = this.soundPool.load(this, R.raw.two_barks,1);
+    }
 
-}
-    public void checkAll(ImageView check1, ImageView check2, ImageView check3) {
-        if ((check1.getVisibility() == View.VISIBLE) && (check2.getVisibility() == View.VISIBLE) && (check3.getVisibility() == View.VISIBLE)) {
-            //todo navigate to Bravo screen, accept argument "current game", send argument to Bravo screen "next game"
-            //todo compute the total number of games OR use a magic number, if next game > total, send arg goto home to Bravo screen
-            //Toast.makeText(getApplicationContext(), "Bravo!", Toast.LENGTH_SHORT).show();
+    private void gotoBravo() {
+        //play audio two_barks from raw
+        if(loaded)  {
+            float leftVolumn = volume;
+            float rightVolumn = volume;
 
-            //play audio two_barks from raw
-            if(loaded)  {
-                float leftVolumn = volume;
-                float rightVolumn = volume;
-
-                // Play sound objects destroyed. Returns the ID of the new stream.
-                int streamId = this.soundPool.play(this.soundIdBarks,leftVolumn, rightVolumn, 1, 0, 1f);
-            }
-
-            //temp code START
-            //TODO fix: this shit below works in emulator but on device NOT the first time you try :(
-            Intent myIntent2 = new Intent(this, Bravo1.class);
-            startActivity(myIntent2);
-            //temp code END
+            // Play sound objects destroyed. Returns the ID of the new stream.
+            int streamId = this.soundPool.play(this.soundIdBarks,leftVolumn, rightVolumn, 1, 0, 1f);
         }
+        //todo navigate to Bravo screen, accept argument "current game", send argument to Bravo screen "next game"
+        //todo compute the total number of games OR use a magic number, if next game > total, send arg goto home to Bravo screen
+        //temp code START
+        Intent myIntent2 = new Intent(this, Bravo1.class);
+        startActivity(myIntent2);
+        //temp code END
     }
 }

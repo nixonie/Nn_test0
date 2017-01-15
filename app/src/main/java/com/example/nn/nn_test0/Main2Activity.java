@@ -25,6 +25,10 @@ public class Main2Activity extends Activity {
                         myIntent = new Intent(v.getContext(), Game_001.class);
                         startActivityForResult(myIntent, 0);
                         break;
+                    case 1:
+                        myIntent = new Intent(v.getContext(), Game_002.class);
+                        startActivityForResult(myIntent, 0);
+                        break;
                     default:
 //                        myIntent = new Intent(v.getContext(), Game_001.class);
 //                        startActivityForResult(myIntent, 0);
@@ -33,6 +37,20 @@ public class Main2Activity extends Activity {
 
 
 
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        final View decorView = this.getWindow().getDecorView();
+        if (hasFocus) {
+            decorView.setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
     }
 }
 
