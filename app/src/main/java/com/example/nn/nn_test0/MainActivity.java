@@ -22,4 +22,23 @@ public class MainActivity extends Activity {
 
         });
     }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        final View decorView = this.getWindow().getDecorView();
+        if (hasFocus) {
+            decorView.setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
+    }
+
+    //TODO: app is kinda slow on actual device - do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.)
+    //TODO: make other game templates samples
+    //TODO: make backgrounds repeatable image
+    //TODO: make different version of images for different densities
 }

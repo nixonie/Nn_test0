@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_game_001"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
 
     tools:context="com.example.nn.nn_test0.Game_001"
     android:background="@drawable/back_02">
 
 <!-- TODO add top bar with home button, next game button and current results -->
-
+    <!-- redo layout Relative > Linear? -->
 
     <ImageView
             android:layout_width="match_parent"
@@ -22,118 +22,129 @@
             android:paddingBottom="10dp"
             android:paddingTop="10dp" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView2">
+
         <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imageView2"
-            android:layout_centerHorizontal="true">
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:shrinkColumns="*"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_weight="0.25">
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:src="@drawable/game001_in01"
                     android:id="@+id/imageView6"
                     android:padding="10dp" />
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:src="@drawable/game001_in03"
                     android:id="@+id/imageView5"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    />
 
                 <ImageView
                     android:src="@drawable/game001_in02"
                     android:id="@+id/imageView4"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:padding="10dp" />
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    />
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/game001_in02"
-                android:id="@+id/imageView6_1"
-                android:padding="10dp" />
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/game001_in01"
-                android:id="@+id/imageView5_1"
-                android:padding="10dp" />
-
-            <ImageView
-                android:src="@drawable/game001_in03"
-                android:id="@+id/imageView4_1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:padding="10dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/game001_in03"
-                android:id="@+id/imageView6_2"
-                android:padding="10dp" />
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/game001_in02"
-                android:id="@+id/imageView5_2"
-                android:padding="10dp" />
-
-            <ImageView
-                android:src="@drawable/game001_in01"
-                android:id="@+id/imageView4_2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:padding="10dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="20dp">
+                android:layout_weight="0.25" >
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game001_in02"
+                    android:id="@+id/imageView6_1"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game001_in01"
+                    android:id="@+id/imageView5_1"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:src="@drawable/game001_in03"
+                    android:id="@+id/imageView4_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="0.25" >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game001_in03"
+                    android:id="@+id/imageView6_2"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game001_in02"
+                    android:id="@+id/imageView5_2"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:src="@drawable/game001_in01"
+                    android:id="@+id/imageView4_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="0.25">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:src="@drawable/game001_in01"
                     android:id="@+id/imageView001_1"
                     android:visibility="invisible"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    />
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:src="@drawable/game001_in01"
                     android:id="@+id/imageView001_2"
                     android:visibility="invisible"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    />
 
                 <ImageView
                     android:src="@drawable/game001_in01"
                     android:id="@+id/imageView001_3"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:visibility="invisible"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    />
             </TableRow>
         </TableLayout>
-
-
-
+    </LinearLayout>
 </RelativeLayout>

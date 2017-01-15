@@ -7,10 +7,6 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-/**
- * Created by nn on 22/12/2016.
- */
-
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
 
@@ -36,7 +32,9 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(385, 385));
+            //issue: this sucks :), sets height and width but this does not work on all screen sizes, 385 is good for big, 200 or something for small :(
+            //imageView.setLayoutParams(new GridView.LayoutParams(200, 200)); //fix below
+            imageView.setAdjustViewBounds(true);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
         } else {

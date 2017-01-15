@@ -4,6 +4,8 @@
     <style name="AppTheme" parent="">
         <!-- Customize your theme here. -->
         <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
 
     </style>
 
