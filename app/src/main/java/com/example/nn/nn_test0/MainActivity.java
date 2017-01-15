@@ -37,7 +37,8 @@ public class MainActivity extends Activity {
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
     }
 
-    //TODO: app is kinda slow on actual device - do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.)
+    //TODO: app is kinda slow on actual device
+    //TODO: do we HAVE to use a different id for _every_ image view in app xml's? (and buttons etc.)
     //TODO: repeating stuff through classes - can be optimized/inherited?: soundpool, Immersive mode...
     //TODO: make other game templates samples, like Game_001...*
     //TODO: make backgrounds repeatable image - or just leave it be
