@@ -20,6 +20,7 @@ public class Main2Activity extends Activity {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 Intent myIntent;
+
                 switch(position) {
                     case 0:
                         myIntent = new Intent(v.getContext(), Game_001.class);
