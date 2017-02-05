@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_004"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.nn.nn_test0.Game_004"
+    android:background="@drawable/back_02">
+
+    <!-- TODO add top bar with home button, next game button and current results -->
+    <!-- redo layout Relative > Linear? -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/game004_question"
+        android:id="@+id/imageViewQ"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageViewQ">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:shrinkColumns="*"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_weight="0.25"
+                android:gravity="start">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in01"
+                    android:id="@+id/imageView1"
+                    android:padding="10dp" />
+            </TableRow>
+            <TableRow
+                android:layout_weight="0.25"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in02"
+                    android:id="@+id/imageView2"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_weight="0.25"
+                android:gravity="end">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in03"
+                    android:id="@+id/imageView3"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_weight="0.25"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in04"
+                    android:id="@+id/imageView4"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in05"
+                    android:id="@+id/imageView5"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game004_in06"
+                    android:id="@+id/imageView6"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
