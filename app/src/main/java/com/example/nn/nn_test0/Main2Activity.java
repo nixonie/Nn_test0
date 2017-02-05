@@ -39,8 +39,8 @@ public class Main2Activity extends Activity {
                         startActivityForResult(myIntent, 0);
                         break;
                     default:
-//                        myIntent = new Intent(v.getContext(), Game_001.class);
-//                        startActivityForResult(myIntent, 0);
+                        myIntent = new Intent(v.getContext(), Game_001.class);
+                        startActivityForResult(myIntent, 0);
                 }
             }});
 

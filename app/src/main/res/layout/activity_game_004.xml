@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/game004_question"
-        android:id="@+id/imageViewQ"
+        android:id="@+id/imageView11"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:paddingBottom="10dp"
@@ -26,7 +26,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/imageViewQ">
+        android:layout_below="@id/imageView11">
 
         <TableLayout
             android:layout_width="fill_parent"
