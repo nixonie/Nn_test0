@@ -14,6 +14,7 @@ public class Bravo1 extends Activity {
         setContentView(R.layout.activity_bravo1);
         //todo: should go to next game
         //todo add home button (main activity 2)
+        //todo add replay last game button
         Button next2 = (Button) findViewById(R.id.button2);
         next2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view2) {

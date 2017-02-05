@@ -26,7 +26,8 @@
         <activity
             android:name=".Bravo1"
             android:screenOrientation="portrait" />
-        <activity android:name=".Game_002"></activity>
+        <activity android:name=".Game_002" />
+        <activity android:name=".Game_003"></activity>
     </application>
 
 </manifest>
