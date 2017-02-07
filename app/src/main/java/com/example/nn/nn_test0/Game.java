@@ -76,6 +76,8 @@ public class Game extends Activity {
         // Load sound file (two_barks.mp3) into SoundPool.
         this.soundIdBarks = this.soundPool.load(this, R.raw.two_barks,1);
 
+        //TODO: so, for every game (question) there will be an audio file, do we add all 100 here/below? Does this affect performance on activity load per game?
+
     }
 
     protected void doBarkSound()
