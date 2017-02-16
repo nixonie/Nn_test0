@@ -38,6 +38,7 @@
             <TableRow
                 android:layout_weight="0.25"
                 android:gravity="start">
+
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -70,6 +71,7 @@
             <TableRow
                 android:layout_weight="0.25"
                 android:gravity="center">
+
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -77,6 +79,7 @@
                     android:id="@+id/imageView4"
                     android:padding="10dp"
                     />
+
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
