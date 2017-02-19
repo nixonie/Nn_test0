@@ -7,6 +7,8 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import static com.example.nn.nn_test0.R.id.imageView03;
+
 public class Game_003 extends Game {
 
     ImageView imgToDrag, imgTargetDrop;
@@ -16,7 +18,7 @@ public class Game_003 extends Game {
         setContentView(R.layout.activity_game_003);
 
         imgToDrag = (ImageView) findViewById(R.id.imageView3);
-        imgTargetDrop = (ImageView) findViewById(R.id.imageView1);
+        imgTargetDrop = (ImageView) findViewById(imageView03);
 
         imgToDrag.setOnLongClickListener(onLongClickListener);
         imgTargetDrop.setOnDragListener(onDragListener);
@@ -45,6 +47,7 @@ public class Game_003 extends Game {
 
                     if(localView.getId() == R.id.imageView3)
                     {
+                        //todo: swap images????
                         goToBravo();
                     }
                     break;

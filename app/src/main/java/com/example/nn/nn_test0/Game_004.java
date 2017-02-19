@@ -65,6 +65,7 @@ public class Game_004 extends Game {
 
                     if(localView.getId() == R.id.imageView4)
                     {
+                        //todo: swap images???
                         result1 =true;
                         proveriRezultat();
                     }
