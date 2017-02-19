@@ -38,12 +38,24 @@
             <TableRow
                 android:layout_weight="0.75"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/game003_in01"
-                    android:id="@+id/imageView2"
-                    android:padding="10dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/game003_in01"
+                        android:id="@+id/imageView2"
+                        android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/game003_in03"
+                        android:id="@+id/imageView03"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="180dp" />
+                </FrameLayout>
             </TableRow>
             <TableRow
                 android:layout_weight="0.25"
