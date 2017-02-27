@@ -65,7 +65,9 @@ public class Game_004 extends Game {
 
                     if(localView.getId() == R.id.imageView4)
                     {
-                        //todo: swap images???
+                        //swap images
+                        ImageView imageSwap1 = (ImageView) findViewById(R.id.imageView3);
+                        imageSwap1.setImageResource(R.drawable.game004_in04);
                         result1 =true;
                         proveriRezultat();
                     }
@@ -87,6 +89,9 @@ public class Game_004 extends Game {
 
                     if(localView.getId() == R.id.imageView5)
                     {
+                        //swap images
+                        ImageView imageSwap1 = (ImageView) findViewById(R.id.imageView1);
+                        imageSwap1.setImageResource(R.drawable.game004_in05);
                         result2 = true;
                         proveriRezultat();
                     }
@@ -108,6 +113,9 @@ public class Game_004 extends Game {
 
                     if(localView.getId() == R.id.imageView6)
                     {
+                        //swap images
+                        ImageView imageSwap1 = (ImageView) findViewById(R.id.imageView2);
+                        imageSwap1.setImageResource(R.drawable.game004_in06);
                         result3 = true;
                         proveriRezultat();
                     }

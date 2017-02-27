@@ -1,7 +1,6 @@
 package com.example.nn.nn_test0;
 
 import android.content.ClipData;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.View;
@@ -47,7 +46,9 @@ public class Game_003 extends Game {
 
                     if(localView.getId() == R.id.imageView3)
                     {
-                        //todo: swap images????
+                        //swap images
+                        ImageView imageSwap1 = (ImageView) findViewById(R.id.imageView03);
+                        imageSwap1.setImageResource(R.drawable.game003_in02);
                         goToBravo();
                     }
                     break;

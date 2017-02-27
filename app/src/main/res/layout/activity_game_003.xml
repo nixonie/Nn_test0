@@ -36,7 +36,7 @@
             android:orientation="vertical">
 
             <TableRow
-                android:layout_weight="0.75"
+                android:layout_weight="1"
                 android:gravity="center">
 
                 <RelativeLayout
@@ -48,26 +48,24 @@
                         android:src="@drawable/game003_in01"
                         android:id="@+id/imageView2"
                         android:padding="10dp" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/game003_in03"
                         android:id="@+id/imageView03"
+                        android:paddingRight="50dp"
                         android:layout_centerVertical="true"
-                        android:layout_alignRight="@+id/imageView2"
-                        android:paddingRight="50dp" />
+                        android:layout_alignParentEnd="true" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/game003_in02"
+                        android:id="@+id/imageView3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:paddingBottom="20dp"/>
                 </RelativeLayout>
-            </TableRow>
-            <TableRow
-                android:layout_weight="0.25"
-                android:gravity="end">
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/game003_in02"
-                    android:id="@+id/imageView3"
-                    android:padding="10dp"
-                    />
             </TableRow>
         </TableLayout>
     </LinearLayout>

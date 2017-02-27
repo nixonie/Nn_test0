@@ -78,6 +78,8 @@ public class Game extends Activity {
 
         //TODO: so, for every game (question) there will be an audio file, do we add all 100 here/below? Does this affect performance on activity load per game?
 
+
+
     }
 
     protected void doBarkSound()
@@ -95,4 +97,5 @@ public class Game extends Activity {
         Intent myIntent2 = new Intent(this, Bravo1.class);
         startActivity(myIntent2);
     }
+
 }
