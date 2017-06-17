@@ -47,6 +47,8 @@ public class Game_004 extends Game {
         @Override
         public boolean onLongClick(View view) {
             ClipData data = ClipData.newPlainText("","");
+            // example usage 2x larger shadow
+            // View.DragShadowBuilder dragShadowBuilder = new MyDragShadowBuilder(view);
             View.DragShadowBuilder dragShadowBuilder = new View.DragShadowBuilder(view);
             view.startDrag(data,dragShadowBuilder,view,0);
             return true;

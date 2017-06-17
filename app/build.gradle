@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 21
-    buildToolsVersion '21.1.2'
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "com.example.nn.nn_test0"
         minSdkVersion 21
@@ -38,6 +38,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:21.0.3'
-    testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }

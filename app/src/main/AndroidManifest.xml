@@ -37,7 +37,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Game_005"></activity>
+        <activity android:name=".Game_005" />
+        <activity android:name=".Game_006" />
+        <activity android:name=".Game_007" />
+        <activity android:name=".Game_008"></activity>
     </application>
 
 </manifest>

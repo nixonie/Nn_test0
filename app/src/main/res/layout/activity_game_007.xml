@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_007"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.nn.nn_test0.Game_007"
+    android:background="@drawable/back_02">
+
+    <!-- TODO add top bar with home button, next game button and current results -->
+    <!-- redo layout Relative > Linear? -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/game007_question"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView2">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:shrinkColumns="*"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_weight="0.66"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game007_in01"
+                    android:id="@+id/imageView216"
+                    android:padding="10dp" />
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game007_in02"
+                    android:id="@+id/imageView226"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_weight="0.34"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/game007_in02"
+                    android:id="@+id/imageView246"
+                    android:visibility="invisible"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

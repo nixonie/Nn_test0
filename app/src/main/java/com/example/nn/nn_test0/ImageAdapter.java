@@ -32,7 +32,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            //issue: this sucks :), sets height and width but this does not work on all screen sizes, 385 is good for big, 200 or something for small :(
+            //issue: sets height and width but this does not work on all screen sizes, 385 is good for big, 200 or something for small :(
             //imageView.setLayoutParams(new GridView.LayoutParams(200, 200)); //fix below
             imageView.setAdjustViewBounds(true);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -49,8 +49,8 @@ public class ImageAdapter extends BaseAdapter {
     private Integer[] mThumbIds = {
             R.drawable.th_q001, R.drawable.th_q004,
             R.drawable.th_q003, R.drawable.th_q002,
-            R.drawable.th_q005, R.drawable.th_q001,
-            R.drawable.th_q002, R.drawable.th_q003,
+            R.drawable.th_q005, R.drawable.th_q006,
+            R.drawable.th_q007, R.drawable.th_q008,
             R.drawable.th_q004, R.drawable.th_q005,
             R.drawable.th_q003, R.drawable.th_q004,
             R.drawable.th_q001, R.drawable.th_q002,
