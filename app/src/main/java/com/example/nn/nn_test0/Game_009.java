@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Game_008 extends Game {
+public class Game_009 extends Game {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
@@ -27,7 +27,7 @@ public class Game_008 extends Game {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_008);
+        setContentView(R.layout.activity_game_009);
         this.prepareImagesAndActions();
         //todo add Audio to read question
         //todo replay the Audio on click of the question
@@ -35,25 +35,25 @@ public class Game_008 extends Game {
     }
     protected void prepareImagesAndActions()
     {
-        final ImageView image218 = (ImageView) this.findViewById(R.id.imageView218);
-        final ImageView image228 = (ImageView) this.findViewById(R.id.imageView228);
-        final ImageView image238 = (ImageView) this.findViewById(R.id.imageView238);
-        final ImageView image248 = (ImageView) this.findViewById(R.id.imageView248);
+        final ImageView image219 = (ImageView) this.findViewById(R.id.imageView219);
+        final ImageView image229 = (ImageView) this.findViewById(R.id.imageView229);
+        final ImageView image239 = (ImageView) this.findViewById(R.id.imageView239);
+        final ImageView image249 = (ImageView) this.findViewById(R.id.imageView249);
 
-        image228.setOnClickListener(new View.OnClickListener() {
+        image239.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                image228.setVisibility(View.INVISIBLE);
-                image248.setVisibility(View.VISIBLE);
+                image239.setVisibility(View.INVISIBLE);
+                image249.setVisibility(View.VISIBLE);
                 //goto bravo play shit etc.
                 goToBravo();
             }
         });
-        image218.setOnClickListener(new View.OnClickListener() {
+        image219.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //TODO: bad choice actions
             }
         });
-        image238.setOnClickListener(new View.OnClickListener() {
+        image229.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //TODO: bad choice actions
             }

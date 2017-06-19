@@ -40,7 +40,11 @@
         <activity android:name=".Game_005" />
         <activity android:name=".Game_006" />
         <activity android:name=".Game_007" />
-        <activity android:name=".Game_008"></activity>
+        <activity android:name=".Game_008" />
+        <activity android:name=".Game_009" />
+        <activity android:name=".Game_010" />
+        <activity android:name="com.example.nn.Game_011" />
+        <activity android:name=".Game_011"></activity>
     </application>
 
 </manifest>

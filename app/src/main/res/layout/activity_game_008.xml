@@ -42,7 +42,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:src="@drawable/game008_in01"
-                    android:id="@+id/imageView216"
+                    android:id="@+id/imageView218"
                     android:padding="10dp" />
             </TableRow>
             <TableRow
@@ -52,7 +52,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:src="@drawable/game008_in02"
-                    android:id="@+id/imageView226"
+                    android:id="@+id/imageView228"
                     android:padding="10dp"
                     />
             </TableRow>
@@ -63,7 +63,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:src="@drawable/game008_in03"
-                    android:id="@+id/imageView236"
+                    android:id="@+id/imageView238"
                     android:padding="10dp"
                     />
             </TableRow>
@@ -74,7 +74,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:src="@drawable/game008_in02"
-                    android:id="@+id/imageView246"
+                    android:id="@+id/imageView248"
                     android:visibility="invisible"
                     android:padding="10dp"
                     />

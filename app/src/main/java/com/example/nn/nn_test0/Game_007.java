@@ -35,20 +35,20 @@ public class Game_007 extends Game {
     }
     protected void prepareImagesAndActions()
     {
-        final ImageView image216 = (ImageView) this.findViewById(R.id.imageView216);
-        final ImageView image226 = (ImageView) this.findViewById(R.id.imageView226);
+        final ImageView image217 = (ImageView) this.findViewById(R.id.imageView217);
+        final ImageView image227 = (ImageView) this.findViewById(R.id.imageView227);
         //final ImageView image236 = (ImageView) this.findViewById(R.id.imageView236);
-        final ImageView image246 = (ImageView) this.findViewById(R.id.imageView246);
+        final ImageView image247 = (ImageView) this.findViewById(R.id.imageView247);
 
-        image226.setOnClickListener(new View.OnClickListener() {
+        image227.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                image226.setVisibility(View.INVISIBLE);
-                image246.setVisibility(View.VISIBLE);
+                image227.setVisibility(View.INVISIBLE);
+                image247.setVisibility(View.VISIBLE);
                 //goto bravo play shit etc.
                 goToBravo();
             }
         });
-        image216.setOnClickListener(new View.OnClickListener() {
+        image217.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //TODO: bad choice actions
             }

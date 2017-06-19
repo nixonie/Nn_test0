@@ -54,6 +54,18 @@ public class Main2Activity extends Activity {
                         myIntent = new Intent(v.getContext(), Game_008.class);
                         startActivityForResult(myIntent, 0);
                         break;
+                    case 8:
+                        myIntent = new Intent(v.getContext(), Game_009.class);
+                        startActivityForResult(myIntent, 0);
+                        break;
+                    case 9:
+                        myIntent = new Intent(v.getContext(), Game_010.class);
+                        startActivityForResult(myIntent, 0);
+                        break;
+                    case 10:
+                        myIntent = new Intent(v.getContext(), Game_011.class);
+                        startActivityForResult(myIntent, 0);
+                        break;
                     default:
                         myIntent = new Intent(v.getContext(), Game_001.class);
                         startActivityForResult(myIntent, 0);
