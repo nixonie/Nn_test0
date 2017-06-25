@@ -44,7 +44,8 @@
         <activity android:name=".Game_009" />
         <activity android:name=".Game_010" />
         <activity android:name="com.example.nn.Game_011" />
-        <activity android:name=".Game_011"></activity>
+        <activity android:name=".Game_011" />
+        <activity android:name=".Game_012"></activity>
     </application>
 
 </manifest>
